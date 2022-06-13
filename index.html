@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
     <header>
@@ -17,38 +18,59 @@
             </ul>
         </nav>
     </header>
-    <section id="about_me">
+
+    <section class="photo">
+        <img src="./resources/images/my_photo.jpg"> 
+    </section>
+
+    <section class="about_me">
+        <h2>About me</h2>
         <p>My name is Mateusz Kitzol. I am from Poland. I am front-end developer.  
         My passion is creating amazing websites with extraordinary css tricks behind it.
         Except to it I'm crazy about football and I love watching movies (especially sci-fi and thrillers).
         </p>
     </section>
-    <section id="photo">
-        <img src="resources/images/my-photo.jpg"> 
-    </section>
-    <section id="projects">
+
+    <section class="projects">
+        <h2>Projects</h2>
         <div>
             <h3>Ramart Website</h3>
             <p>Modern websited created especially for well-known company Ramart which sells frames for paintings.</p>
+            <div class="image_container">
+                <img src="./resources/images/ramart_logo.png">
+            </div>
         </div>
         <div>
             <h3>Radio station website</h3> 
             <p>Website created for junior high school located in Wrocław.</h3>
+            <div class="image_container">
+                <img src="./resources/images/radio.jpg">
+            </div>
         </div>
         <div>
             <h3>Memory game website</h3>
-            <p>A self-development project created in order to learn new CSS skills</p>
+            <p>A self-development project created in order to learn new CSS skills.</p>
+            <div class="image_container">
+                <img src="./resources/images/memory_game.jpg">
+            </div>
         </div>
     </section>
-    <section id="my_skills">
-        <div id="my_skills_containter">
-            <img src="./resources/images/html_logo.png">
-            <img src="./resources/images/css_logo.png">
-            <img src="./resources/images/javascipt_logo.png">
-            <img src="./resources/images/jsx_logo.png">
-            <img src="./resources/images/react_logo.png">
-            <img src="./resources/images/redux_logo.png">
+
+    <section class="my_skills">
+        <h2>My skills</h2>
+        <div class = "my_skills_container">
+                <img src="./resources/images/html_logo.png">
+                <img src="./resources/images/css_logo.png">
+                <img src="./resources/images/javascipt_logo.png">
+                <img src="./resources/images/jsx_logo.png">
+                <img src="./resources/images/react_logo.png">
+                <img src="./resources/images/redux_logo.png">
+            </div>
         </div>
-    </section>  
+    </section>
+
+    <section class="contact">
+        <h2>Contact with me</h2>
+    </section>
 </body>
 </html>
