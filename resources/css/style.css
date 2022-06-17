@@ -87,6 +87,19 @@ h1, h2{
     font-weight: bold;
 }
 
+@media only screen and (max-width: 725px){
+    *   {
+    text-align: center;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    h1 {
+        font-size: 3rem;    
+    }
+}
+
+
 
 
 
@@ -95,9 +108,9 @@ h1, h2{
 header {
     border-bottom: 5px dotted black;
     margin-bottom: 3rem;
-    height: 80px;
+    margin-top: 1rem;
+    height: 5rem;
     width: 100%;
-    display: flex;
     z-index: 2;
 }
 
@@ -111,7 +124,6 @@ header li {
 }
 
 header h1{
-    display: inline;
     margin: auto 1rem;
 }
 
@@ -119,6 +131,18 @@ header nav {
     position: absolute;
     right: 0px;
     z-index: 1;
+}
+
+@media only screen and (max-width: 725px){
+    header{
+        margin-bottom: 2.25rem;
+    }
+}
+
+@media only screen and (max-width: 364px){
+    header{
+        height: 8rem;
+    }
 }
 
 
@@ -157,11 +181,9 @@ header nav {
 .projects img {
     max-width: 100%;
     height: auto;
-    display: none;
 }
 
 .projects p {
-    display: none;
     margin: 1rem 0;
 }
 
@@ -184,6 +206,18 @@ header nav {
 .projects .button_up {
     display: none;
 }
+
+#ramart_content, #radio_content, #memory_content {
+    display: none;
+}
+
+@media only screen and (max-width: 725px){
+    div.image_container {
+        width: 80%;
+        margin: 1rem auto   ;
+    }
+}
+
 
 
 
@@ -232,6 +266,19 @@ header nav {
     margin: 0.5rem 0;
 }
 
+@media only screen and (max-width: 725px){
+    .photo img{
+        float: none;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 340px){
+    .contact h2{
+        font-size: 2rem;
+    }
+}
+
 
 
 
@@ -240,7 +287,7 @@ header nav {
 
 #contact_header {
     border-bottom: 0px;
-    margin-bottom: 1rem;
+    margin: 1rem 0px;
     height: 5rem;
 }
 
@@ -250,4 +297,59 @@ p.contact_page{
 
 strong{
     font-weight: bold;
+}
+
+@media only screen and (max-width: 725px){
+    .desktop {
+        display: none;
+    }
+
+    p.mobile {
+        margin: 2rem 0;
+        font-size: 2rem; 
+    }
+}
+
+@media only screen and (min-width: 725px){
+    .mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    p.mobile {
+        font-size: 1.5rem;
+    }
+
+    #contact_header {
+        height: 4rem;
+    }
+}
+
+@media only screen and (max-width: 418px){
+    p.mobile {
+        font-size: 1.25rem;
+    }
+
+    h1.contact_page {
+        font-size: 2.5rem;
+    }
+
+    #contact_header {
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 354px){
+    p.mobile {
+        font-size: 1rem;
+    }
+
+    h1.contact_page {
+        font-size: 2rem;
+    }
+
+    #contact_header {
+        height: 2rem;
+    }
 }
